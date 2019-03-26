@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PushTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="permission_location_rationale">We need fine location permissions</string>
+</resources>

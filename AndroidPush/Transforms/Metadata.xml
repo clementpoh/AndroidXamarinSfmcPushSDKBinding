@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+-->
+
+<!-- To get MarketingCloudSdk to work -->
+<!--Rename the inner parent class -->
+<attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']" 
+    name="managedName">InternalD</attr>
+
+<!--Make the private parent class public -->
+<attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']"
+    name="visibility">public</attr>
+
+<attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d']"
+    name="obfuscated">false</attr>
+
+<!--Make the private inner parent class public -->
+<attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d.b']"
+    name="visibility">public</attr>
+
+<attr path="/api/package[@name='com.salesforce.marketingcloud']/class[@name='d.b']"
+    name="obfuscated">false</attr>
+
+</metadata>
